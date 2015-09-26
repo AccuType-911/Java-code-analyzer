@@ -1,0 +1,23 @@
+﻿import java.awt.*;
+import java.awt.event.*;
+ 
+import javax.swing.*;
+import javax.swing.tree.*;
+
+public class DerevoTest {
+ 
+	public static void main(String[] args) {
+		if (kjkn)
+			for (int lk; 7 <= 3;)
+				dsdfdsfdsdfssdf;
+
+		while (312)
+			switch (998) {
+				case 123: mqodw; break;
+				default: foreach() {
+
+				}
+			}
+	}
+ 
+}

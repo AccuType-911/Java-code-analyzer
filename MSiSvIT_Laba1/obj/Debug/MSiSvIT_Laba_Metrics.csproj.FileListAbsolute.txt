@@ -1,0 +1,26 @@
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe.config
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.pdb
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba_Metrics.csprojResolveAssemblyReference.cache
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.baml
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.g.cs
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\App.g.cs
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1_MarkupCompile.cache
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.g.resources
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.Properties.Resources.resources
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba_Metrics.csproj.GenerateResource.Cache
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.exe
+C:\Users\AccuType-911\Documents\Visual Studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.pdb
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe.config
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.exe
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.pdb
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.pdb
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba_Metrics.csprojResolveAssemblyReference.cache
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.baml
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.g.cs
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\App.g.cs
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1_MarkupCompile.cache
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.g.resources
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.Properties.Resources.resources
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba_Metrics.csproj.GenerateResource.Cache

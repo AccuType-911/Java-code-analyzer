@@ -1,0 +1,18 @@
+﻿<Window x:Class="MSiSvIT_Laba1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="370" Width="650">
+    <Grid Margin="0,0,2,0">
+        <Label Content="Анализатор метрик кода Java&#xA;Метрики Чепина, Холстеда, Маккейба и SLOC+" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="321" FontWeight="Bold" FontSize="13"/>
+        <Button x:Name="BtnOpen" Content="Открыть" HorizontalAlignment="Left" Margin="20,78,0,0" VerticalAlignment="Top" Width="75" Click="btnOpen_Click"/>
+        <Label x:Name="LblPath" Content="Путь к файлу с Java кодом" HorizontalAlignment="Left" Margin="116,76,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.4,0.731" FontStyle="Italic" FontSize="10"/>
+        <StackPanel x:Name="MetricsPanel" Orientation="Horizontal" HorizontalAlignment="Left" Height="28" Margin="20,128,0,0" VerticalAlignment="Top" Width="600" IsEnabled="False">
+            <Button x:Name="BtnSloc" Content="SLOC+" Width="135" Margin="0,0,20,0" Click="BtnSloc_Click"/>
+            <Button x:Name="BtnMcCabe" Content="Метрика Маккейба" Width="135" Margin="0,0,20,0" Click="BtnMcCabe_Click"/>
+            <Button x:Name="BtnChapin" Content="Метрика Чепина" Width="135" Margin="0,0,20,0" Height="28" VerticalAlignment="Bottom" Click="btnChapin_Click"/>
+            <Button x:Name="BtnHolsted" Content="Метрика Холстеда" Width="135" Margin="0" Click="btnHolsted_Click"/>
+        </StackPanel>
+        <TextBox x:Name="TxtboxToOutMetricResult" HorizontalAlignment="Left" Height="120" Margin="20,190,0,0" TextWrapping="Wrap" Text="Метричесский результат выводится здесь." VerticalAlignment="Top" Width="600" BorderThickness="3,2,2,3" AllowDrop="True" IsReadOnly="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>

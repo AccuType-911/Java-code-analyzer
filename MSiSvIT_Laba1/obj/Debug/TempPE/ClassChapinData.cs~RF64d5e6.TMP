@@ -1,0 +1,87 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+namespace MSiSvIT_Laba1
+{
+    class ClassChapinData
+    {
+        public string Name { get; set; }
+        public string classCode { get; set; }
+        private List<MethodChapinData> Methods;
+        public List<VariablesChapinData> ClassVariables { get; private set; }
+
+        public ClassChapinData(string classCode)
+        {
+            Initialize(classCode);
+            classCode = CodePartsDeleter.DeleteEnumsAndInterfaces(classCode);
+            AnalizeClass();
+        }
+
+        private void Initialize(string classCode)
+        {
+            this.classCode = classCode;
+            this.Name = getClassNameFromCode();
+            this.classCode = getClassBody();
+        }
+           
+        private string getClassNameFromCode()
+        {
+            Regex classAndSpaces = new Regex(@"class\s+");
+            Match match = classAndSpaces.Match(classCode);
+
+            if (IsAnonimClass(match))
+                return "Anonim";
+            else
+            {
+                int classNameBeginInd = match.Index + match.Length;
+                int classNameLen = getNextIdentifierLen(classNameBeginInd);
+                return classCode.Substring(classNameBeginInd, classNameLen);
+            }
+
+        }
+
+        private bool IsAnonimClass(Match match)
+        {
+            return !match.Success;
+        }
+
+        private int getNextIdentifierLen(int classNameBeginInd)
+        {
+            int i;
+            for (i = classNameBeginInd; Char.IsLetterOrDigit(classCode[i]) || classCode[i] == '_'; i++)
+                ;
+            return i - classNameBeginInd;
+        }
+
+        private string getClassBody()
+        {
+            int classBodyBegin = FindFirstScobe();
+            int classBodyEnd = FindLastScobe();
+            string result = classCode.Substring(classBodyBegin, classBodyEnd - classBodyBegin + 1);
+            return result;
+        }
+
+        private int FindFirstScobe()
+        {
+            return classCode.IndexOf('{');
+        }
+
+        private int FindLastScobe()
+        {
+            int i = classCode.Length - 1;
+            while (classCode[i] != '}')
+                i--;
+            return i;
+        }
+        private void AnalizeClass()
+        {
+            throw new NotImplementedException();
+        }
+
+
+    }
+}

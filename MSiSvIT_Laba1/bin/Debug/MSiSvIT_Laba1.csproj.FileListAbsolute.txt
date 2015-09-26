@@ -1,0 +1,26 @@
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe.config
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.csprojResolveAssemblyReference.cache
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.baml
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.g.cs
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\App.g.cs
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1_MarkupCompile.cache
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.g.resources
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.Properties.Resources.resources
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.csproj.GenerateResource.Cache
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.pdb
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.exe
+c:\users\samsung\documents\visual studio 2013\Projects\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.pdb
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe.config
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.exe
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.pdb
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.pdb
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.csprojResolveAssemblyReference.cache
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.baml
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.g.cs
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\App.g.cs
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1_MarkupCompile.cache
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.g.resources
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.Properties.Resources.resources
+F:\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.csproj.GenerateResource.Cache
