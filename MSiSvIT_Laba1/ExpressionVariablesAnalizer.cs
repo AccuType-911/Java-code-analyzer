@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     [Flags]
     enum ExpressionAnalizationMode

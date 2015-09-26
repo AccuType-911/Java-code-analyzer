@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     static class CodePartsDeleter
     {

@@ -2,7 +2,7 @@
 using System.Windows;
 using Microsoft.Win32;
 
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     public partial class MainWindow
     {

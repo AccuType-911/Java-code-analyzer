@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MSiSvIT_Laba1.Properties
+namespace JavaCodeAnalyzer.Properties
 {
 
 

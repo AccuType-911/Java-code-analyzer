@@ -1,5 +1,5 @@
 ﻿
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     public class BracketLimits
     {

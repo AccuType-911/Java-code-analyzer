@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     internal struct MethodMcCabeNumber
     {

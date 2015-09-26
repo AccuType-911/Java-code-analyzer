@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     class HolstedAnalizer
     {

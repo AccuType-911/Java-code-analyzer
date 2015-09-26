@@ -1,0 +1,13 @@
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe.config
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.exe
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\bin\Debug\MSiSvIT_Laba1.pdb
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\CodeAnalyzer.csprojResolveAssemblyReference.cache
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.baml
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MainWindow.g.cs
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\App.g.cs
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1_MarkupCompile.cache
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.g.resources
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.Properties.Resources.resources
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\CodeAnalyzer.csproj.GenerateResource.Cache
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.exe
+D:\Мои Проги\С#\MSiSvIT_Laba1\MSiSvIT_Laba1\obj\Debug\MSiSvIT_Laba1.pdb

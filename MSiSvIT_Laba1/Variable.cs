@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     public enum VariableType { Local, Field }
 

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     public static class CodePartsFinder
     {
@@ -101,7 +101,6 @@ namespace MSiSvIT_Laba1
         }
         public static string GetSubStrAccordingLimits(BracketLimits limits, string code)
         {
-            string str = code.Substring(686,20);
             int subStrLen = limits.CloseBracketIndex - limits.OpenBracketIndex + 1;
             return code.Substring(limits.OpenBracketIndex, subStrLen);
         }

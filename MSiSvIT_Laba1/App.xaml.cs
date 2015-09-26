@@ -1,5 +1,5 @@
 ﻿
-namespace MSiSvIT_Laba1
+namespace JavaCodeAnalyzer
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml
