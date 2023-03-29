@@ -37,7 +37,7 @@ namespace JavaCodeAnalyzer
         public static string[] WordOperators =
         {
             "new", "instaceof", "return", "break", "continue", "throw", "try", 
-            "for", "foreach", @"(?<!}[\s\r\n\t]*)while", "do", "if", "switch"
+            "for", "foreach", "while", "do", "if", "switch"
         };
         private static List<string> GetWordOperatorsPatterns(string[] wordOperators)
         {
@@ -109,7 +109,7 @@ namespace JavaCodeAnalyzer
 
         public static string[] ConstructionsWords =
         {
-            "try", "catch", "for", "foreach", @"(?<!}[\s\r\n\t]*)while", "do", "finally", "if", "switch"
+            "try", "catch", "for", "foreach", "while", "do", "finally", "if", "switch"
         };
         public static List<string> GetConstructionsPatterns()
         {
