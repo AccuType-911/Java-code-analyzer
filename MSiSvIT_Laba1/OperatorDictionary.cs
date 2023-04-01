@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace JavaCodeAnalyzer
 {
@@ -26,10 +27,17 @@ namespace JavaCodeAnalyzer
         }
         private void AddOperatorInDictionaryIfUsedInCode(string pattern)
         {
-            int timesPatternIsInCode = CodePartsFinder.TimesPatternIsFoundedInText(code, pattern);
+            Regex regex = new Regex(pattern);
+            string foundedOperator = regex.Match(this.code).Value;
+            int timesPatternIsInCode = regex.Matches(this.code).Count;
 
             if (timesPatternIsInCode > 0)
-                operatorDictionary.Add(pattern, timesPatternIsInCode);
+            {
+                if (!operatorDictionary.ContainsKey(foundedOperator))
+                    operatorDictionary.Add(foundedOperator, timesPatternIsInCode);
+                else
+                    operatorDictionary[foundedOperator] += timesPatternIsInCode;
+            }
         }
     }
 }
