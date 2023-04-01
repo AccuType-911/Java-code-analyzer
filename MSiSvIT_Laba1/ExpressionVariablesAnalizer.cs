@@ -56,7 +56,9 @@ namespace JavaCodeAnalyzer
         }
         private static void SetVariableModefied(string variableName)
         {
-            avaliableVariables.GetTopVariable(variableName).SetModefied();
+            Variable curVariable = avaliableVariables.GetTopVariable(variableName);
+            if (curVariable != null)
+                curVariable.SetModefied();
         }
 
         private static void ProcessTernaryOperators()
@@ -119,7 +121,8 @@ namespace JavaCodeAnalyzer
             if (variableInExpressionRegex.IsMatch(expression))
             {
                 Variable curVariable = avaliableVariables.GetTopVariable(variableName);
-                ProcessVariableAccordingMode(curVariable, mode);
+                if(curVariable != null)
+                    ProcessVariableAccordingMode(curVariable, mode);
             }
         }
         private static void ProcessVariableAccordingMode(Variable curVariable, ExpressionAnalizationMode mode)

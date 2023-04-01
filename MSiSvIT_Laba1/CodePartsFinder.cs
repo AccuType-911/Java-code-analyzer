@@ -129,14 +129,16 @@ namespace JavaCodeAnalyzer
         public static Dictionary<string, string> CutMethodsFromClassBodyAndReturnMethodsWithNames(ref string classCode)
         {
             Dictionary<string, string> methodsAndTheirName = new Dictionary<string, string>();
-            const string initializerOrMethodHeaderPattern = @"(?<=[\s\r\n\t]*)[^{};]*{";
 
+            // Exclude variable definition like 'final static int[] demand = {30, 20, 70, 30, 60}'
+            // Also, include cases when the open-bracket is placed in new line  like 'void main(arg) \n {'
+            const string initializerOrMethodHeaderPattern = @"(?<=[\s\r\n\t]*)[^{};]*\(.*?\)[\s]*{";
             Match match = Regex.Match(classCode, initializerOrMethodHeaderPattern);
+
             while (match.Success)
             {
                 string methodName = GetNextMethodName(match.Index, classCode);
                 string methodOrInitializerCode = CutNextMethodCode(match.Index, ref classCode);
-
                 methodsAndTheirName.Add(methodOrInitializerCode, methodName);
                 match = Regex.Match(classCode, initializerOrMethodHeaderPattern);
             }

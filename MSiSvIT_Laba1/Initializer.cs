@@ -97,7 +97,13 @@ namespace JavaCodeAnalyzer
 
                 if (indWhereWordForFound != codePart.Length)
                 {
-                    UnitSplittedForAt(ref splittedCode, operatorInd);
+                    const string forWithoutSemicolonPattern = @"for\s*\(.*?:.*?";
+                    Regex regex = new Regex(forWithoutSemicolonPattern);
+                    bool isForWithoutSemicolon = regex.IsMatch(codePart);
+
+                    if (!isForWithoutSemicolon)
+                        // If not like 'for (.. : ..)' or 'for (.. : ..)  ..' then reunit splitted 'for(.. ; .. ; ..)' by ';'
+                        UnitSplittedForAt(ref splittedCode, operatorInd);
                     codePart = splittedCode[operatorInd].OperatorCode;
 
                     string thePartAfterFor = CutNonBracketsOperatorPart(ref codePart, indWhereWordForFound);
@@ -105,7 +111,8 @@ namespace JavaCodeAnalyzer
 
                     splittedCode[operatorInd].Type = OperatorTypes.For;
 
-                    InsertNewOperatorInSplittedCode(operatorInd + 1, thePartAfterFor, ref splittedCode);
+                    if(thePartAfterFor != null)
+                        InsertNewOperatorInSplittedCode(operatorInd + 1, thePartAfterFor, ref splittedCode);
                 }
             }
         }
@@ -155,11 +162,12 @@ namespace JavaCodeAnalyzer
                 string codePart = splittedCode[operatorInd].OperatorCode;
 
                 Match operatorMatch = ReturnOperatorMatch(codePart);
+
                 if (operatorMatch.Success)
                 {
                     string notPartOfOperatorWithBrackets = CutNonBracketsOperatorPart(ref codePart, operatorMatch.Index);
                     if (notPartOfOperatorWithBrackets == null)
-                        return;
+                        continue;
                     splittedCode[operatorInd].OperatorCode = codePart;
 
                     string operatorTypeName = operatorMatch.ToString();
@@ -171,13 +179,23 @@ namespace JavaCodeAnalyzer
         }
         private static Match ReturnOperatorMatch(string codePart)
         {
-            const string operatorsWithBracketsPattern = @"(if)|(while)|(switch)|(foreach)";
-            string operatorsWithBracketsOnStartPattern = "^" + JavaReservedWordsAndOperators.
-                GetWordPatternFromWord(operatorsWithBracketsPattern);
-            Regex startOperatorsWithBracketsRegex = new Regex(operatorsWithBracketsOnStartPattern,
-                RegexOptions.Singleline);
+            // Exclude non-reserved keyword cases like 'int switchAAA = 1'
+            const string isOperatorWithBracketsKeywordPattern = @"(if($|[\s|(]))|(while($|[\s|(]))|(switch($|[\s|(]))|(foreach($|[\s|(]))";
+            Regex regex = new Regex(isOperatorWithBracketsKeywordPattern);
+            Match match = regex.Match(codePart);
 
-            return startOperatorsWithBracketsRegex.Match(codePart);
+            if (match.Success)
+            {
+                const string operatorsWithBracketsPattern = @"(if)|(while)|(switch)|(foreach)";
+                string operatorsWithBracketsOnStartPattern = "^" + JavaReservedWordsAndOperators.
+                    GetWordPatternFromWord(operatorsWithBracketsPattern);
+                Regex startOperatorsWithBracketsRegex = new Regex(operatorsWithBracketsOnStartPattern,
+                    RegexOptions.Singleline);
+
+                return startOperatorsWithBracketsRegex.Match(codePart);
+            }
+
+            return match;
         }
         #endregion
 

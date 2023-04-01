@@ -102,7 +102,12 @@ namespace JavaCodeAnalyzer
             Match match = variableRegex.Match(classCodeCopy);
             while (match.Success)
             {
-                this.AddNewClassVariable(match.ToString());
+                string line = match.ToString();
+                // Exclude special static initializer cases, ex. "static{ facts.put(0L, 1D); ... }"
+                if (!VaribleAnnoncementContainsAssignment(line) 
+                    && VaribleAnnoncementNotContainsParentheses(line) 
+                    || VaribleAnnoncementContainsAssignment(line))
+                        this.AddNewClassVariable(match.ToString());
                 match = match.NextMatch();
             }
         }
@@ -129,8 +134,11 @@ namespace JavaCodeAnalyzer
         {
             return variacleAnnouncement.Contains('=');
         }
+        private static bool VaribleAnnoncementNotContainsParentheses(string variacleAnnouncement)
+        {
+            return !variacleAnnouncement.Contains(')');
+        }
 
-        
         private void ProcessInitializersAndMethodsCodes()
         {
             this.InitializersAndMethods = new List<Initializer>(this.initializersAndMethodsCodes.Count);

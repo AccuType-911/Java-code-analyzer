@@ -145,6 +145,7 @@ namespace JavaCodeAnalyzer
             AmountOfInputtedVariables = 0;
             AmountOfModificatedVariables = 0;
             AmountOfUsedVariables = 0;
+            AllVariableNames = new SortedSet<string>();
         }
     }
 }

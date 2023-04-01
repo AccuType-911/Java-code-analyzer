@@ -95,13 +95,22 @@ namespace JavaCodeAnalyzer
         }
         private void ProcessConstDigitsAsOperands()
         {
-            const string constDigitPattern = @"[0-9]\w*(\.\w+)?((e|E)(\+|-)\w+)?";
-            Regex constDigitRegex = new Regex(constDigitPattern);
+            // To exclude constDigits occured in constStrings and constChars like "Something 1 other 2..."
+            string codeWithoutConstStringsAndChars = CodePartsDeleter.DeleteConstStrings(this.code);
+            codeWithoutConstStringsAndChars = CodePartsDeleter.DeleteConstChars(codeWithoutConstStringsAndChars);
 
-            Match constDigitMatch = constDigitRegex.Match(this.code);
+            // Also exclude numbers in identificators of methods and variables
+            const string constDigitPattern = @"[^A-Za-z|_][0-9]\w*(\.\w+)?((e|E)(\+|-)\w+)?";
+            Regex constDigitRegex = new Regex(constDigitPattern);
+            Match constDigitMatch = constDigitRegex.Match(codeWithoutConstStringsAndChars);
+
             while (constDigitMatch.Success)
             {
-                this.AddOperandToOperandDictionary(constDigitMatch.ToString());
+                string constDigit = constDigitMatch.ToString();
+                // Extract only number
+                Regex onlyNumbersPattern = new Regex(@"[0-9]\w*(\.\w+)?((e|E)(\+|-)\w+)?|-[0-9]\w*(\.\w+)?((e|E)(\+|-)\w+)?");
+                constDigit = onlyNumbersPattern.Match(constDigit).Value;
+                this.AddOperandToOperandDictionary(constDigit);
                 constDigitMatch = constDigitMatch.NextMatch();
             }
         }
